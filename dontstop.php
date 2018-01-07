@@ -1,4 +1,10 @@
-
+<!--
+    This is a silly website not meant to be taken seriously. Just something for a small project I was working on that required looping an audio file a set amount of times.
+	Author: Jonas Bakelaar
+	Date Published: January 7, 2018
+	Date Written: September, 2017
+	http://www.bakelaar.me
+-->
 <html>
 <head>
 <title>Pure Poetry</title>
@@ -20,11 +26,11 @@ div.footer{
 $dontstop[0] = "And they dont stop comin<br>";
 $x = $_GET['howMany'];
 if(is_numeric($x) == FALSE){
-	echo "THATS NOT A DAMNED NUMBER";
+	echo "That's not a number :\\";
 	$x = 0;
 	echo $x;
 } elseif($x > 630500) {
-	echo "boot too big";
+	echo "This number is far too big!";
 	$x = 0;
 	echo $x;
 }
@@ -50,7 +56,6 @@ for($i = 0; $i<$x; $i++){
 <p id="test"></p>
 </div>
 </body>
-
 <script>
 var count = 1;
 var max = <?php echo $x; ?>;
